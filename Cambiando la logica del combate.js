@@ -192,8 +192,14 @@ function ataqueAleatorioEnemigo() {
         ataqueEnemigo.push("Tierra")
     }
     console.log(ataqueEnemigo)
-    combate() 
+    iniciarPelea()
 }
+
+function iniciarPelea() {
+    if(ataqueJugador.length === 5) {
+        
+    }
+}       
 
 function combate() {
     if(ataqueEnemigo == ataqueJugador) {
