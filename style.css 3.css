@@ -1,0 +1,42 @@
+url('https://fonts.googleapis.com/css2?family=Fredoka&family=Ruslan+Display&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Ruslan Display', cursive;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.titulo {
+    color: white; 
+}
+
+.subtitulo {
+
+}
+
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid orangered;
+}
+
+
+input {
+    display: none;
+}
