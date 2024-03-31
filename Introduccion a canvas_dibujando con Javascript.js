@@ -19,6 +19,9 @@ const ataquesdelEnemigo = document.getElementById("ataques-del-enemigo")
 const contenedorTarjetas = document.getElementById('contenedorTarjetas')
 const contenedorAtaques = document.getElementById('contenedorAtaques')
 
+const sectionVermapa = document.getElementById('ver-mapa')
+const mapa = document.getElementById('mapa')
+
 let mokepones = []
 let ataqueJugador = []
 let ataqueEnemigo = []
@@ -84,7 +87,8 @@ mokepones.push(hipodoge,capipepo,ratigueya)
 
 function iniciarJuego() {  
 
-    sectionSeleccionarAtaque.style.display = "none"  
+    sectionSeleccionarAtaque.style.display = "none" 
+    sectionVermapa. style.display ='none' 
     
     mokepones.forEach((mokepon) => {
         opcionDeMokepones = `
@@ -111,7 +115,8 @@ function seleccionarMascotaJugador() {
 
     sectionSeleccionarMascota.style.display = "none"   
 
-    sectionSeleccionarAtaque.style.display = "flex"
+    //sectionSeleccionarAtaque.style.display = "flex"
+    sectionVermapa.style.display = 'flex'
 
     if(inputHipodoge.checked) {
         spanMascotaJugador.innerHTML = inputHipodoge.id
