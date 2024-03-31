@@ -42,7 +42,7 @@ let victoriasJugador = 0
 let victoriasEnemigo = 0
 let vidasJugador = 3
 let vidasEnemigo = 3
-let lienzo = mapa.getContext('2d')
+let lienzo = mapa.getContext("2d")
  
 class Mokepon {
     constructor(nombre, foto, vida) {
@@ -121,7 +121,7 @@ function seleccionarMascotaJugador() {
     let imagenDeCapipepo = new Image()
     imagenDeCapipepo.src = capipepo.foto
     lienzo.drawImage(
-        imagenDeCapipepo
+        imagenDeCapipepo,
         20,
         40,
         100,
