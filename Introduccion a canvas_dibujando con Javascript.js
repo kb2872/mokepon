@@ -42,6 +42,7 @@ let victoriasJugador = 0
 let victoriasEnemigo = 0
 let vidasJugador = 3
 let vidasEnemigo = 3
+let lienzo = mapa.getContext('2d')
  
 class Mokepon {
     constructor(nombre, foto, vida) {
@@ -117,6 +118,15 @@ function seleccionarMascotaJugador() {
 
     //sectionSeleccionarAtaque.style.display = "flex"
     sectionVermapa.style.display = 'flex'
+    let imagenDeCapipepo = new Image()
+    imagenDeCapipepo.src = capipepo.foto
+    lienzo.drawImage(
+        imagenDeCapipepo
+        20,
+        40,
+        100,
+        100
+    )
 
     if(inputHipodoge.checked) {
         spanMascotaJugador.innerHTML = inputHipodoge.id
